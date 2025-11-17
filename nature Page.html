@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website</title>
+    <style>
+        .navbar{
+            border: 2px solid black;
+            /* border-radius: 20px; */
+            background-color: rgb(67, 67, 67);
+            /* color: white; */
+            width: 1517px;
+            height: 60px;
+            margin-top: -9px ;
+            margin-left: -8px;
+            padding-bottom: 10px;
+        }
+        .navbar ul li{
+            float: left;
+            list-style: none;
+            padding: 7px 7px 7px 7px;
+            margin: 3px 13px;
+        }
+        .navbar ul li a{
+            text-decoration: none;
+            color: white;
+        }
+        .navbar ul li a:hover{
+            background-color:brown;
+            margin: 10px 10px;
+            padding:9px 9px;
+            border: 1px solid rgb(245, 240, 240);
+            border-radius: 15px;    
+        }
+        .navbar input{
+            border: 2px solid gray;
+            border-radius: 10px;
+            float: right;
+            margin: 10px 41px;
+            padding: 2px 1px;
+        }
+
+
+        .container{
+            border: 2px solid rgb(204, 245, 129);
+            width: 1517px;
+            height: 170px;
+            background-color: rgb(231, 250, 195);
+            margin-left: -8px
+        }
+        .container img{
+            float: left;
+            width: 112px;
+            /* margin: auto; */
+            /* display: block; */
+            /* padding-top: 12px; */
+            padding: 18px 18px;
+        }
+        h2{
+            text-align: center;
+            font-size: 50px;
+            padding: 7px 50px;
+            color: brown;
+        }
+
+
+        #about{
+            background-color:rgb(220, 244, 171); ;
+            width: 1517px;
+            height: 640px;
+            border: 2px solid rgb(176, 220, 96);
+            margin-top: -9px ;
+            margin-left: -8px;
+            text-align: justify;
+        }
+        #about .headings{
+            padding-left: 22px;
+        }
+        #about .aboutp{
+            margin: auto;
+            display: block;
+            padding-bottom: 7px;
+        } 
+        #about ul li{
+            font-size: 17px;
+            padding-bottom: 7px;
+            padding-right: 20px;
+        
+        }
+    
+        .services{
+            border: 2px solid rgb(176, 220, 96);
+            width: 1517px;
+            height: 1900px;
+            background-color: rgb(220, 244, 171);
+            margin-left: -8px
+        }
+        .services p{
+            text-align: center;
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+        .services img{
+            width:400px;
+            display: block;
+            margin: auto;
+        }
+        #ways{
+            border: 2px solid rgb(205, 225, 168);
+            text-align: center;
+            padding: 10px;
+            margin-top: 0px;
+            background-color:rgb(231, 250, 195);
+        }
+        .item{
+            background-color: rgb(223, 250, 222);
+            border: 3px solid rgb(133, 137, 239);
+            border-radius: 30px;
+            width: 510x;
+            height: 338px;
+            margin: 20px 100px 40px 95px;
+            padding: 15px 24px 50px 24px;
+            font-family: cursive;
+            text-align: center;   
+        }
+        
+        #contact .heading h2{
+            color: rgb(8, 8, 211);
+            border: 2px solid rgb(205, 225, 168);
+            text-align: center;
+            margin-top: -5px;
+            margin-left: -8px;
+            width: 1417px;
+            background-color:rgb(231, 250, 195);
+        }
+        #form {
+            border: 2px solid rgb(176, 220, 96);
+            width:1517px ;
+            height: 800px;
+            margin-top: -41px;
+            margin-left: -8px;
+            background-color: rgb(214, 238, 168);;
+        }
+        .table{
+            border: 2px solid rgb(189, 187, 187);
+            border-radius: 10px;
+            width: 700px;
+            height: 700px;
+            margin: auto;
+            background-color: rgb(201, 202, 202);
+            padding: 20px 20px 20px 20x;
+            margin-top: 50px;
+            
+        }
+        #text{
+             width: 378px;
+             height: 30px;
+             border-radius: 7px;
+             border: 1px solid gray;
+             padding: 10px 10px;
+             margin: 15px 15px 8px 15px;
+             display: block;
+            margin: auto;
+        }
+        #select{
+             width: 120px;
+             height: 30px;
+             border-radius: 7px;
+             border: 1px solid gray;
+             margin: 15px 15px 8px 15px;
+             display: block;
+            margin: auto;
+        }
+        #email{
+             width: 380px;
+             height: 50px;
+             border-radius: 7px;
+             border: 1px solid gray;
+             padding: 7px 10px;
+             margin: 15px 15px 8px 15px;
+             display: block;
+             margin: auto;
+        }
+        #subject{
+            width: 400px;
+            border-radius: 7px;
+            border: 1px solid gray;
+            margin: 15px 15px 15px 15px;
+            display: block;
+            margin: auto;
+        }
+        #reset{
+            border: 1px solid gray;
+            margin: 15px 15px 15px 15px;
+            border-radius: 7px;
+            color: white;
+            width: 100px;
+            height: 40px;
+            background-color: lightseagreen;
+            font-size: 20px;
+        }
+        #submit{
+            border: 1px solid gray;
+            margin: 15px 15px 15px 15px;
+            border-radius: 7px;
+            color: white;
+            width: 100px;
+            height: 40px;
+            font-size: 20px;
+            background-color: rgb(247, 74, 74);
+        }
+        .names{
+            padding-left: 50px;
+            
+        }
+        .select{
+            padding-left: 50px;
+        }
+        .submit{
+            padding-left: 400px;
+        }
+        .head{
+            
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+           <div class="navbar">
+            <ul>
+               <li><a href="#">Home</a></li>
+               <li><a href="#">About Us</a></li>
+               <li><a href="#">Services</a></li>
+               <li><a href="#">Contact Us</a></li>
+            </ul>
+            <input type="search" placeholder="search"> 
+           </div>
+        </nav>
+    </header>
+    <div class="container">
+        <img src="https://i.pinimg.com/736x/9e/d2/15/9ed2154eb1dc87512940b9a9bbc2ad72.jpg" 
+             alt="logo">
+        <h2>What We Save Saves Us!!</h2>     
+    </div>
+
+    <div id="about">
+        <h3  class="headings">Save Environment to Save Future</h3>
+        <ul><li>Each day, an individual intakes Oxygen from the atmosphere in such an amount using Which 3 oxygen cylinders can be filled. 
+            The Cost of A single Oxygen cylinder Is Rs 700, which mean that An individual On everyday Basis takes In oxygen Worth
+            Rs2100 (700 x 3) and Rs 766500 Per annum ,and (65years and above) up-to Rs 5 Crore worth oxygen, Which is released into
+            the atmosphere by trees and plants as A free Gift/ resource, all of which are destroyed by us intentionally.</li>
+        </ul>
+         <img class="aboutp" src="https://png.pngtree.com/thumb_back/fh260/background/20231219/pngtree-environmental-protection-and-energy-saving-theme-green-protection-environment-background-image_15522992.png"
+              alt="save Environment" width="450px" height="250px"> 
+        <ul>
+               <li>Environment refers to the natural surroundings and conditions in which we live. Unfortunately, this Environment has come under serious
+                threat. This threat is almost entirely due to human activities. These human activities have certainly caused serious damage to the
+                Environment. Most noteworthy, this damage risks the survival of living things on Earth. Therefore, there is an urgent need to save the Environment.</li>
+               <li>First of all, the world climate will remain normal. Harming the Environment and causing pollution have caused global warming. Due to
+                 this many humans and animals have died. Hence, saving the environment would reduce <b> global warming.</b></li>
+               <li>The health of people would improve. Due to pollution and deforestation, the health of many people is poor. Conserving the Environment
+                 would certainly improve the health of people. Most noteworthy, saving Environment would reduce many diseases.</li>
+               <li>Saving Environment would certainly protect the animals. Extinction of many species will not take place due to saving Environment.
+                 Many endangered species would also increase in population.</li>
+               <li>Environment is a precious gift on this planet. Our Environment is facing a big danger. Saving Environment is the need of the hour. 
+                Probably, it is the biggest concern of Humanity right now. Any delay in this regard could be disastrous.</li>     
+        </ul>   
+
+    </div>
+    <div class="services">
+        <div  id="ways">
+            <h3  class="headings">Ways Of Saving Environment</h3>
+        </div>
+        <div id="forest"  class="item">
+            <h3>Forest Conservation</h3>
+            <img src="https://news.ejustice.lk/wp-content/uploads/2021/07/116558728-environment-earth-day-in-the-hands-of-trees-growing-seedlings-bokeh-green-background-female-hand-hol.jpg"
+                 alt="forest" width="300px"  height="200px"> 
+            <p>People must give attention to forest conservation. Forests are vital for the Environment. However, deforestation certainly
+               reduces the area of forests around the World. The government must launch programs to conserve the forests. The government 
+               must make harming forests a criminal offense.</p>     
+        </div>
+
+        <div  id="soil"  class="item">
+            <h3>Soil Conservation</h3>
+            <img src="https://cdn.mos.cms.futurecdn.net/7J6NG4zBN88JyrfL94RvyT.jpg" 
+                 alt="soil"  width="200px"  height="200px">
+            <p>Soil conservation is yet another important way to save the Environment. For this, there must be control of landslides,
+               floods, and soil erosion. Furthermore, there should also be afforestation and tree plantation to conserve the soil. 
+               Also, terrace farming and using natural fertilizers are some more ways.</p>
+        </div>
+
+        <div  id="waste"  class="item">
+            <h3>Waste Management</h3>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0oR5ED2p4T3h1a3n_Mz9_G9TNnIRScP-8mz6L2wYiQdD49NeATjE2Q9kzb7_jzQaDGaE&usqp=CAU" 
+                 alt="waste" height="200px">
+            <p>Waste management is a powerful way of protecting the environment. There must be proper disposal of wastes. Most 
+                noteworthy, this would help to keep the surroundings healthy. The government must ensure to clean the streets
+                and other polluted land areas. Furthermore, there should be toilets in every house. </p>     
+        </div>
+
+        <div  id="pollution"  class="item">
+            <h3>Pollution</h3>
+            <img src="https://media.licdn.com/dms/image/C4E12AQGNZkuBfxJ3wQ/article-cover_image-shrink_600_2000/0/1626636798104?e=2147483647&v=beta&t=Y8AFT6izwA360imyAJmgROeuLuacumR_-ixsGktI7ak" 
+                 alt="pollution" height="200px">
+            <p>Pollution is probably the biggest danger to the Environment. Smoke, dust, and harmful gases cause air pollution.
+                These causes of air pollution come from industries and vehicles mostly. Furthermore, Chemicals and pesticides cause 
+                land and water pollution.</p>     
+        </div>
+    </div>
+
+    <div id="contact" >
+         <div  class="heading">
+              <h2>Contact Us</h2>
+         </div>
+    </div>
+
+    <div id="form">
+        <div  class="table">
+        <form action="action_page.php">
+            
+            <div class="names">
+              First Name:
+              <input id="text" type="text" placeholder="Enter your name">
+            </div>
+            <br>
+            <div  class="names">
+               Last Name: <input  id="text" type="text" placeholder="your last name">
+            </div>
+            <br>
+            <div  class="select">
+               Country: <select name="Country" id="select">
+                                 <option value="">Select</option>
+                                 <option value="">India</option>
+                                 <option value="">USA</option>
+                                 <option value="">Canada</option>
+                                 <option value="">AUstralia</option>
+                        </select>
+            
+                City:   <select name="City" id="select">
+                                <option value="">Select</option>
+                                <option value="">Hyderabad</option>
+                                <option value="">Bengaluru</option>
+                                <option value="">Chennai</option>
+                                <option value="">Pune</option>
+                                <option value="">Mumbai</option>
+                        </select>
+            </div>
+            <br>
+            <div class="names">
+                Email: <input  id="email" type="email" placeholder="your email">
+            </div>
+            <br>
+            <div class="names">
+                Any Message: <br><textarea name="subject" id="subject" placeholder="write something" cols="30" rows="10"> </textarea>
+            </div>
+            <br>
+            <div  class="submit">
+                <input id="submit" type="submit">
+                <input id="reset" type="reset">
+            </div>    
+           
+        </form>
+        </div>
+
+    </div>
+    
+
+</body>
+</html>
